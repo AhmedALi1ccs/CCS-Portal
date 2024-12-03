@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CCS Portal</title>
+    <link rel="stylesheet" href="Assets/style.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+<body>
+    <div id="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#" onclick="scrollToTop()">Home</a>
+        <a href="https://preventative.streamlit.app/">Preventative Tool</a>
+        <a href="https://listandtagger.streamlit.app/">List and Tag Maker</a>
+        <a href="https://sherif-autobot.streamlit.app/">Sheriff Bot</a>
+        <a href="https://probateautomater.streamlit.app/">Probate Bot</a>
+        <a href="/aboutme.html">About</a>
+        <a href="mailto:ahmed@goccs.net">Contact</a>
+    </div>
+
+        <div id =main>
+        <!-- Header Section -->
+        <div class="container header">
+            <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+                <button id="hamburger-btn" onclick="openNav()">&#9776;</button>
+                <!-- Brand/logo -->
+                <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+                    <!-- Replace SVG with Bootstrap Icon -->
+                    <img src="./Assets/images/logo.png" alt="CCS Logo" height="30px">
+                    <span class="fs-4 header-name">CCS Portal</span>
+                </a>
+
+                <!-- Navigation -->
+                <ul class="nav nav-pills">
+                    <li class="nav-item"><a href="#" class="nav-link active" onclick="scrollToTop()" aria-current="page">Home</a></li>
+                    <li class="nav-item"><a href="/aboutme.html" class="nav-link">About</a></li>
+                </ul>
+            </header>
+        </div>
+        <div class="container hero">
+            <div class="px-4 py-5 my-5 text-center" bis_skin_checked="1">
+                <img class="d-block mx-auto mb-4" src="/Assets/images/logo.png" alt="" width="72" height="57">
+                <h1 class="display-5 fw-bold text-body-emphasis "> CCS Portal</h1>
+                <div class="col-lg-6 mx-auto" bis_skin_checked="1">
+                <p class="lead mb-4">welcome to the ccs portal here you can find all of the Features Offered by our head engineer Ahmed Aly</p>
+                <div class="d-grid gap-2 d-sm-flex justify-content-sm-center" bis_skin_checked="1">
+                    <!-- HTML Button with Pre-filled Subject and Body -->
+                    <button type="button" class="btn btn-primary btn-lg px-4 gap-3" onclick="window.location.href='mailto:ahmed@goccs.net?subject=Feature Request&body=I would like to request the following feature:';">Ask for Feature</button>
+
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="container Features">
+            <div class="row g-4 py-5 row-cols-1 row-cols-lg-3" bis_skin_checked="1">
+                <div class="feature col" bis_skin_checked="1">
+                <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3" bis_skin_checked="1">
+                    <img class="preventative" src="Assets/images/preventative.png" alt="preventative" style="background: none; border: none; box-shadow: none; height: 40px;">
+                </div>
+                <h3 class="fs-2 text-body-emphasis">Preventative Tool</h3>
+                <p>This is our most important Product, This Tools main functions are.</p>
+                <ol>
+                    <li>Standradize both Mailing and Property address to USPS Format</li>
+                    <li>put all the Names in the proper Format</li>
+                    <li>Remove unwanted Land uses</li>
+                    <li>Fixing The Tags</li>
+                    <li>Puts all the columns in an automatic upload to rei mapping </li>
+                </ol>
+                <a href="https://preventative.streamlit.app/" class="icon-link">
+                    Explore
+                    <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+                </a>
+                </div>
+                <div class="feature col" bis_skin_checked="1">
+                <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3" bis_skin_checked="1">
+                    <img class="preventative" src="Assets/images/card-checklist.svg" alt="checklist" height="30px">
+                </div>
+                <h3 class="fs-2 text-body-emphasis">List And tag Maker</h3>
+                <p>here we Upload the 8020 files and it  terns the 0 and 1 in the columns to accurate lists and tags that match the REI_sift functions.</p>
+                <a href="https://listandtagger.streamlit.app/" class="icon-link">
+                    Explore
+                    <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+                </a>
+                </div>
+                <div class="feature col" bis_skin_checked="1">
+                <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3" bis_skin_checked="1">
+                    <img class="preventative" src="Assets/images/sheriff-badge-svgrepo-com.svg" height="20px">
+                </div>
+                <h3 class="fs-2 text-body-emphasis">Sherif Bot</h3>
+                <p>This is an Automated Bot that goes into the sherif site for franklin and fetches all the data needed it takes only a date and does the remaining.</p>
+                <a href="https://sherif-autobot.streamlit.app/" class="icon-link">
+                    Explore
+                    <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+                </a>
+                </div>
+                <div class="feature col" bis_skin_checked="1">
+                    <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3" bis_skin_checked="1">
+                    <img class="preventative" src="Assets/images/probate.png" height="30px">
+                    </div>
+                    <h3 class="fs-2 text-body-emphasis">probate Bot</h3>
+                    <p>This is an Automated Bot that goes into the probate site for franklin and fetches all the data needed it takes only a date and does the remaining.</p>
+                    <a href="https://probateautomater.streamlit.app/" class="icon-link">
+                    Explore
+                    <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="container footer">
+            <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+                <p class="col-md-4 mb-0 text-body-secondary">© 2024 ccs Inc</p>
+            
+                <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+                <img src="Assets/images/logo.png" height="40px">
+                </a>
+            
+                <ul class="nav col-md-4 justify-content-end">
+                <li class="nav-item"><a href="#"onclick="scrollToTop()" class="nav-link px-2 text-body-secondary">Home</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Features</a></li>
+                <li class="nav-item"><a href="/aboutme.html" class="nav-link px-2 text-body-secondary">About</a></li>
+                </ul>
+                <ul>
+                    <li>Tom Davis Marketing director</li>
+                    <li>Sean Grabow CEO</li>
+                    <li>Ahmed Head Engineer</li>
+                </ul>
+            </footer>
+        </div>
+    </div>
+    
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+AMKpHlFsCfT/TEmCZSmPDMO3BIpX" crossorigin="anonymous"></script>
+    <script>
+        function openNav() {
+            document.getElementById("sidebar").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("sidebar").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+        }
+        function scrollToTop() {
+            // Two methods to ensure cross-browser compatibility
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'  // This provides a smooth scrolling effect
+            });
+            
+            // Close the sidebar if it's open
+            closeNav();
+        }
+    </script>
+</body>
+</html>
